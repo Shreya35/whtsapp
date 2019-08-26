@@ -9,8 +9,9 @@ import {createStore} from "redux";
 import {Provider} from "react-redux";
 import {reducer1} from "./Components/Reducers/reducer1"
 const socket = io.connect('http://localhost:3100');
+console.log("Testing.....");
 socket.on('connect',(data)=>{
-    console.log("the connect evenet run on server");
+    // console.log("the connect evenet run on server");
     let getLoggedInUser = JSON.parse(localStorage.getItem('userLogin'));
     if(getLoggedInUser!==null) {
         socket.emit('loggedInUser',{
