@@ -1,0 +1,126 @@
+.chatContainer {
+  display: flex;
+  height: 100vh
+}
+.availableUsers{
+  width: 20%
+}
+.chatbox {
+  width: 80%
+}
+/* Available Users*/
+
+.listContainer li {
+  padding: 25px;
+  text-transform: capitalize;
+  list-style-type: none;
+  text-align: center
+}
+
+/*Chat Box*/
+
+.chatArea {
+  height: 85%
+}
+.inputText {
+  height: 15%;
+} 
+.inputData {
+  width: 85%;
+  padding: 5px
+}
+/*online users*/
+.listStyle{
+  background-color: palevioletred
+}
+
+/*to differentiate between sender and reciever*/
+
+.senderStyle{
+  text-align: left;
+}
+.recieverStyle{
+  text-align: end;
+}
+
+/*disable a button*/
+.btnDisable {
+  cursor: not-allowed;
+  pointer-events: none;
+
+}
+/*Sign Up */
+.hero{
+ margin-top: 40px
+}
+
+.signUpController {
+  width:30%;
+  margin:  0px auto;
+  border: 1px solid black;
+  border-radius:17%;
+}
+
+.headingController {
+  font-size: 35px;
+  text-align: center
+}
+.inputBox{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 15px;
+
+}
+
+.positionIcon{
+  font-size: 30px;
+  position: absolute;
+  top: 34px;
+  left: 100px;
+  color: lightslategray;
+
+}
+
+input{
+  padding: 10px;
+  padding-left: 50px;
+  margin: 15px;
+  /* box-shadow:0px 0px 5px white; */
+  width:60%;
+}
+.btnController{
+  display: flex;
+  justify-content: center
+}
+button {
+  padding: 12px;
+  background-image: linear-gradient(to right, #f6c949 , #eea02f);
+  border: none;
+  color: white;
+  border-radius: 18px;
+  font-size: 17px;
+  outline:none
+}
+.textWrapper{
+  display:flex;
+  justify-content: center;
+  font-size: 17px
+}
+.textWrapper p{
+  color:lightslategray
+}
+.diffColor{
+  color: #eea02f
+}
+/*btn chatBox*/
+.btnChatBox {
+  padding: 12px;
+    background-image: linear-gradient(to right, #f6c949 , #eea02f);
+    border: none;
+    color: white;
+    border-radius: 18px;
+    font-size: 17px;
+}
+
+ 
