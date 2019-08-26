@@ -75,7 +75,7 @@ class AvailableUsers extends Component {
          <ul>
              {this.state.allUsers.map((item,index)=>{
 
-                 var userOnline = false;
+                 let userOnline = false;
                  if(this.state.onlineUsers.indexOf(item._id) !== -1){
                      userOnline=true;
                  }
@@ -84,12 +84,7 @@ class AvailableUsers extends Component {
                  return (
                     <>
                     <li className={this.state.selectedItem===item?"listStyle":""} key={index} onClick={(e)=>{this.selectedUser(item)}}>
-                     {item.username}
-                    {/* {item.username}{this.state.onlineUsers.forEach(online=>{
-                        if(this.state.allUsers.indexOf(online)!==-1) {
-
-                        }
-                    })}<span style={{color:'green',fontSize:"80px"}}>.</span> */}
+                     {item.username}              
                     {userOnline && <span style={{color:'green',fontSize:"80px"}}>.</span>}
                     </li>
                     
